@@ -9,7 +9,7 @@ using System.IO;
 
 public class SystemManager : MonoBehaviour
 {
-    public TextMeshProUGUI playerNameInput;
+
     public string playerName;
     public static SystemManager Instance;
     public int highScore = 0;
@@ -35,11 +35,7 @@ public class SystemManager : MonoBehaviour
         public string player;
     }
 
-    public void StartGame()
-    {
-        playerName = $"{playerNameInput.text}";
-        SceneManager.LoadScene(1);
-    }
+
 
     public void SaveHighScore()
     {
